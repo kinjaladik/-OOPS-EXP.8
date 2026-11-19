@@ -11,6 +11,7 @@ using namespace std;
 struct Student { int id; string name; int marks; };
 
 int main() {
+
     vector<Student> students = { {101, "Kinjal", 91}, {102, "Priya", 85}, {103, "Rahul", 62}, {104, "Ananya", 90}, {105, "Vikram", 74} };
     // 1. transform
     transform(students.begin(), students.end(), students.begin(), [](auto s) {
